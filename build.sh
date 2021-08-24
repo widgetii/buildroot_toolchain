@@ -7,6 +7,7 @@ ABI=$1
 case $ABI in
   linux-musleabi) true ;;
   linux-uclibcgnueabihf) true ;;
+  linux-gnueabi) true ;;
   *) echo "Usage: $0 <ABI>"; exit 1 ;;
 esac
 
