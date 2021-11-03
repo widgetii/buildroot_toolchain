@@ -6,5 +6,6 @@ RUN apt update && \
 ARG ABI
 
 ADD arm-openipc-${ABI}_sdk-buildroot.tar.gz /opt
-ADD arm-openipc-${ABI}.cmake /opt
-ENV PATH /opt/arm-openipc-${ABI}_sdk-buildroot/bin:$PATH
+ADD arm-openipc-${ABI}.cmake /opt/arm-openipc.cmake
+RUN ln -sv /opt/arm-openipc-linux-* /opt/arm-openipc
+ENV PATH /opt/arm-openipc/bin:$PATH
