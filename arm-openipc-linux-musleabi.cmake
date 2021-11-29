@@ -1,5 +1,3 @@
-#include("${CMAKE_CURRENT_LIST_DIR}/find_compiler.cmake")
-
 set(CMAKE_SYSTEM_NAME Linux)
 set(CMAKE_CROSSCOMPILING TRUE)
 set(CMAKE_SYSTEM_PROCESSOR arm)
