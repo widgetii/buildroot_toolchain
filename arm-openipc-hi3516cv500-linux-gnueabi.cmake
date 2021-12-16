@@ -1,0 +1,1 @@
+arm-openipc-linux-gnueabi.cmake

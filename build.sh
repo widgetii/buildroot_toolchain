@@ -5,14 +5,13 @@ set -x
 ABI=$1
 
 case $ABI in
-  linux-musleabi) true ;;
-  linux-uclibcgnueabihf) true ;;
-  linux-gnueabi) true ;;
-  xm5[13]0-linux-musleabi) true ;;
-  nt98562-linux-musleabihf) true ;;
   hi3516av100-linux-musleabi) true ;;
   hi3516cv[23]00-linux-musleabi) true ;;
+  hi3516cv500-linux-gnueabi) true ;;
   hi3516ev300-linux-musleabi) true ;;
+  nt98562-linux-musleabihf) true ;;
+  ssc335-linux-uclibcgnueabihf) true ;;
+  xm5[13]0-linux-musleabi) true ;;
   *) echo "Usage: $0 <ABI>"; exit 1 ;;
 esac
 
