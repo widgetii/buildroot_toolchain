@@ -10,7 +10,7 @@ case $ABI in
   hi3516cv500-linux-gnueabi) true ;;
   hi3516ev300-linux-musleabi) true ;;
   nt98562-linux-musleabihf) true ;;
-  ssc335-linux-uclibcgnueabihf) true ;;
+  ssc335-linux-musleabihf) true ;;
   xm5[13]0-linux-musleabi) true ;;
   *) echo "Usage: $0 <ABI>"; exit 1 ;;
 esac
