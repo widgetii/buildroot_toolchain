@@ -7,6 +7,7 @@ ABI=$1
 case $ABI in
   hi3516av100-linux-musleabi) true ;;
   hi3516cv[123]00-linux-musleabi) true ;;
+  hi3519v101-linux-musleabi) true ;;
   hi3516cv500-linux-gnueabi) true ;;
   hi3516ev300-linux-musleabi) true ;;
   nt98562-linux-musleabihf) true ;;
