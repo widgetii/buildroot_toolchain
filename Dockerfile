@@ -4,8 +4,9 @@ RUN apt update && \
 	ninja-build wget pkg-config
 
 ARG ABI
+ARG ARCH
 
-ADD arm-openipc-${ABI}_sdk-buildroot.tar.gz /opt
-ADD arm-openipc-${ABI}.cmake /opt/arm-openipc.cmake
-RUN ln -sv /opt/arm-openipc-linux-* /opt/arm-openipc
-ENV PATH /opt/arm-openipc/bin:$PATH
+ADD ${ARCH}-openipc-${ABI}_sdk-buildroot.tar.gz /opt
+ADD ${ARCH}-openipc-${ABI}.cmake /opt/${ARCH}-openipc.cmake
+RUN ln -sv /opt/${ARCH}-openipc-linux-* /opt/${ARCH}-openipc
+ENV PATH /opt/${ARCH}-openipc/bin:$PATH
