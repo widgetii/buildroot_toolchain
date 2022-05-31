@@ -8,7 +8,7 @@ ARCH=$2
 [ -z "$ARCH" ] && ARCH=arm
 
 case $ABI in
-  t31-linux-musl) ARCH=mipsel ;;
+  fh8852v200-linux-musleabi) true ;;
   hi3516av100-linux-musleabi) true ;;
   hi3516cv[123]00-linux-musleabi) true ;;
   hi3516cv500-linux-gnueabi) true ;;
@@ -16,6 +16,7 @@ case $ABI in
   hi3519v101-linux-musleabi) true ;;
   nt98562-linux-musleabihf) true ;;
   ssc335-linux-musleabihf) true ;;
+  t31-linux-musl) ARCH=mipsel ;;
   xm5[13]0-linux-musleabi) true ;;
   *) echo "Usage: $0 <ABI>"; exit 1 ;;
 esac
