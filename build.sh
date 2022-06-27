@@ -9,6 +9,7 @@ ARCH=$2
 
 case $ABI in
   fh8852v200-linux-musleabi) true ;;
+  gm8136-linux-uclibcgnueabi) true ;;
   hi3516av100-linux-musleabi) true ;;
   hi3516cv[123]00-linux-musleabi) true ;;
   hi3516cv500-linux-gnueabi) true ;;
