@@ -12,7 +12,9 @@ case $ABI in
   gm8136-linux-uclibcgnueabi) true ;;
   hi3516av100-linux-musleabi) true ;;
   hi3516cv[123]00-linux-musleabi) true ;;
-  hi3516cv500-linux-gnueabi) true ;;
+  hi3516cv500-linux-gnueabi)
+    SDKFILE=cortex_a7-gcc8.4.0-glibc-4_9-11fbf8ef.tgz
+    ;;
   hi3516ev300-linux-musleabi) true ;;
   hi3519v101-linux-musleabi) true ;;
   nt98562-linux-musleabihf) true ;;
@@ -22,7 +24,7 @@ case $ABI in
   *) echo "Usage: $0 <ABI>"; exit 1 ;;
 esac
 
-SDKFILE=${ARCH}-openipc-${ABI}_sdk-buildroot.tar.gz
+SDKFILE=${SDKFILE:=${ARCH}-openipc-${ABI}_sdk-buildroot.tar.gz}
 if [ ! -f "$SDKFILE" ]; then
     echo "$SDKFILE does not exist. Maybe you need to rename it after download"
     exit 2
