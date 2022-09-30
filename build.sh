@@ -36,6 +36,7 @@ docker \
   build \
   --build-arg ABI=$ABI \
   --build-arg ARCH=$ARCH \
+  --build-arg SDKFILE=$SDKFILE \
   -t $IMAGE .
 
 echo "Built $IMAGE"

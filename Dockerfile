@@ -5,8 +5,9 @@ RUN apt update && \
 
 ARG ABI
 ARG ARCH
+ARG SDKFILE
 
-ADD ${ARCH}-openipc-${ABI}_sdk-buildroot.tar.gz /opt
+ADD ${SDKFILE} /opt
 ADD ${ARCH}-openipc-${ABI}.cmake /opt/${ARCH}-openipc.cmake
 RUN ln -sv /opt/${ARCH}-openipc-linux-* /opt/${ARCH}-openipc
 ENV PATH /opt/${ARCH}-openipc/bin:$PATH
