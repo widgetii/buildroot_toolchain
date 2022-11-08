@@ -13,7 +13,7 @@ case $ABI in
   hi3516av100-linux-musleabi) true ;;
   hi3516cv[123]00-linux-musleabi) true ;;
   hi3516cv500-linux-gnueabi)
-    SDKFILE=cortex_a7-gcc8.4.0-glibc-4_9-11fbf8ef.tgz
+    SDKFILE=cortex_a7-gcc12.1.0-glibc-4_9-c2ce36fd.tgz
     ;;
   hi3516ev200-linux-musleabi)
     SDKFILE=cortex_a7_thumb2-gcc8.4.0-musl-4_9-1e913a17.tgz
