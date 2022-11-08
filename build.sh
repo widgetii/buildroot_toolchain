@@ -10,18 +10,30 @@ ARCH=$2
 case $ABI in
   fh8852v200-linux-musleabi) true ;;
   gm8136-linux-uclibcgnueabi) true ;;
-  hi3516av100-linux-musleabi) true ;;
-  hi3516cv[123]00-linux-musleabi) true ;;
+  hi3516cv100-linux-musleabi)
+    SDKFILE=arm-gcc8.4.0-musl-3_0-1e913a17.tgz
+    ;;
+  hi3516cv200-linux-musleabi)
+    SDKFILE=arm926t-gcc8.4.0-musl-4_9-1e913a17.tgz
+    ;;
+  hi3516cv300-linux-musleabi)
+    SDKFILE=arm926t-gcc8.4.0-musl-3_18-1e913a17.tgz
+    ;;
   hi3516cv500-linux-gnueabi)
     SDKFILE=cortex_a7-gcc12.1.0-glibc-4_9-c2ce36fd.tgz
     ;;
   hi3516ev200-linux-musleabi)
     SDKFILE=cortex_a7_thumb2-gcc8.4.0-musl-4_9-1e913a17.tgz
     ;;
-  hi3519v101-linux-musleabi) true ;;
+  hi3519v101-linux-musleabi)
+    SDKFILE=cortex_a17_a7_thumb2-gcc8.4.0-musl-3_18-1e913a17.tgz
+    ;;
   nt98562-linux-musleabihf) true ;;
   ssc335-linux-musleabihf) true ;;
-  t31-linux-musl) ARCH=mipsel ;;
+  t31-linux-musl)
+    ARCH=mipsel
+    SDKFILE=mips_xburst-gcc8.4.0-musl-3_10-1e913a17.tgz
+    ;;
   xm5[13]0-linux-musleabi) true ;;
   *) echo "Usage: $0 <ABI>"; exit 1 ;;
 esac
