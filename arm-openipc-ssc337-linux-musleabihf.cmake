@@ -1,1 +1,0 @@
-arm-openipc-linux-musleabihf.cmake

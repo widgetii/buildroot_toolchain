@@ -29,7 +29,9 @@ case $ABI in
     SDKFILE=cortex_a17_a7_thumb2-gcc8.4.0-musl-3_18-1e913a17.tgz
     ;;
   nt98562-linux-musleabihf) true ;;
-  ssc335-linux-musleabihf) true ;;
+  infinity6b0-linux-musleabihf)
+    SDKFILE=cortex_a7_thumb2_hf-gcc8.4.0-musl-4_9-1e913a17.tgz
+    ;;
   t31-linux-musl)
     ARCH=mipsel
     SDKFILE=mips_xburst-gcc8.4.0-musl-3_10-1e913a17.tgz
