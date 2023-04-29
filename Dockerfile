@@ -1,4 +1,5 @@
-FROM ubuntu:20.10
+# same as ubuntu-latest on GitHub Actions
+FROM ubuntu:22.04
 RUN apt update && \
 	DEBIAN_FRONTEND=noninteractive apt install -y cmake git python3 \
 	ninja-build wget pkg-config

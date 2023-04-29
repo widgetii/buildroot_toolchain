@@ -32,6 +32,9 @@ case $ABI in
   infinity6b0-linux-musleabihf)
     SDKFILE=cortex_a7_thumb2_hf-gcc8.4.0-musl-4_9-1e913a17.tgz
     ;;
+  infinity6e-linux-gnueabi)
+    SDKFILE=cortex_a7_thumb2_hf-gcc12.2.0-glibc-4_9-71f114d2.tgz
+    ;;
   t31-linux-musl)
     ARCH=mipsel
     SDKFILE=mips_xburst-gcc8.4.0-musl-3_10-1e913a17.tgz
