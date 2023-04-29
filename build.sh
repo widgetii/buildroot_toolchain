@@ -36,6 +36,10 @@ case $ABI in
     ARCH=mipsel
     SDKFILE=mips_xburst-gcc8.4.0-musl-3_10-1e913a17.tgz
     ;;
+  t40-linux-musl)
+    ARCH=mipsel
+    SDKFILE=mips_xburst-gcc8.4.0-musl-4_4-1e913a17.tgz
+    ;;
   xm5[13]0-linux-musleabi) true ;;
   *) echo "Usage: $0 <ABI>"; exit 1 ;;
 esac
